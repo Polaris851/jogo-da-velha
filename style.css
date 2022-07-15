@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 90vh;
+    width: 100vw;
+    background: plum;
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    height: 90%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+.container.X .celula:not(.X):not(.O):hover::after,
+.container.X .celula:not(.X):not(.O):hover::before {
+    background: rgba(255, 192, 203, 0.3) !important;
+}
+
+.container.O .celula:not(.X):not(.O):hover::before,
+.container.O .celula:not(.X):not(.O):hover::after {
+    border: 15px solid rgba(255, 192, 203, 0.3) !important;
+
+}
+
+/*CELULA*/
+.celula {
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.celula.X,
+.celula.O {
+    cursor: not-allowed;
+}
+
+.celula:nth-child(1),
+.celula:nth-child(2),
+.celula:nth-child(3) {
+    border-top: none;
+}
+
+.celula:nth-child(1),
+.celula:nth-child(4),
+.celula:nth-child(7) {
+    border-left: none;
+}
+
+.celula:nth-child(7),
+.celula:nth-child(8),
+.celula:nth-child(9) {
+    border-bottom: none;
+}
+
+.celula:nth-child(3),
+.celula:nth-child(6),
+.celula:nth-child(9) {
+    border-right: none;
+}
+
+/*JOGADOR X*/
+.celula.X::before,
+.celula.X::after,
+.container.X .celula:not(.X):not(.O):hover::after,
+.container.X .celula:not(.X):not(.O):hover::before {
+    content: "";
+    height: calc(100px * 0.15);
+    width: calc(100px * 0.9);
+    background: pink;
+    position: absolute;
+}
+
+.celula.X::before,
+.container.X .celula:not(.X):not(.O):hover::before {
+    transform: rotate(45deg);
+}
+
+.celula.X::after, 
+.container.X .celula:not(.X):not(.O):hover::after {
+    transform: rotate(-45deg);
+}
+
+/*JOGADOR O*/
+.celula.O::before,
+.celula.O::after, 
+.container.O .celula:not(.X):not(.O):hover::before,
+.container.O .celula:not(.X):not(.O):hover::after {
+    content: "";
+    height: calc(100px * 0.6);
+    width: calc(100px * 0.6);
+    background: transparent;
+    border-radius: 50%;
+    border: 15px solid pink;
+    position: absolute;
+}
+
+.resultado {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+}
+
+.resultado p {
+    color: white;
+    font-size: 3rem;
+}
+
+.resultado button {
+    font-size: 1.7rem;
+    background-color: plum;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.resultado button:hover {
+    background-color: white;
+    color: plum;
+}
+
+.res {
+    display: flex;
+}
