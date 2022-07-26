@@ -11,6 +11,13 @@
 ## Sobre
 Projeto desenvolvido para o aprendizado. Ele consiste em reproduzir o jogo da velha, tendo como resultado um empate (também conhecido como velha) ou um vencedor (podendo ser o jogador X ou o jogador O).
 
+## Demonstração
+<h1 align="center">
+  <div style="display: flex; flex-direction: row;">
+    <img width="900" style="border-radius: 10px" height="auto" alt="Demonstração" title="Demonstração" src="" />
+  <div>
+</h1>
+
 ## Tecnologias utilizadas
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
