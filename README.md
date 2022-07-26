@@ -13,9 +13,7 @@ Projeto desenvolvido para o aprendizado. Ele consiste em reproduzir o jogo da ve
 
 ## Demonstração
 <h1 align="center">
-  <div style="display: flex; flex-direction: row;">
-    <img width="900" style="border-radius: 10px" height="auto" alt="Demonstração" title="Demonstração" src="" />
-  <div>
+    <img width="900" style="border-radius: 10px" height="auto" alt="Demonstração" title="Demonstração" src="https://raw.githubusercontent.com/Polaris851/jogo-da-velha/main/jogo-da-velha.gif" />
 </h1>
 
 ## Tecnologias utilizadas
