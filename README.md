@@ -12,9 +12,9 @@
 Projeto desenvolvido para o aprendizado. Ele consiste em reproduzir o jogo da velha, tendo como resultado um empate (também conhecido como velha) ou um vencedor (podendo ser o jogador X ou o jogador O).
 
 ## Demonstração
-<h1 align="center">
+<p align="center">
     <img alt="Demonstração" title="Demonstração" src="https://raw.githubusercontent.com/Polaris851/jogo-da-velha/main/jogo-da-velha.gif" />
-</h1>
+</p>
 
 ## Tecnologias utilizadas
 
